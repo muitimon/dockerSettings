@@ -9,4 +9,7 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
     apt-get update && \
     apt-get install -y oracle-java8-installer
 
+RUN apt-get update
+RUN apt-get -y install emacs25
+
 CMD "/bin/bash"
